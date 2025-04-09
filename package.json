@@ -1,24 +1,24 @@
 {
-  "publisher": "antfu",
-  "name": "ext-name",
-  "displayName": "ext-name",
-  "version": "0.0.0",
+  "publisher": "Snoword",
+  "name": "nodejs-version-vscode",
+  "displayName": "NodeJS Version",
+  "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm@10.4.1",
-  "description": "",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "description": "Show the current version of NodeJS on the left of VSCode status bar",
+  "author": "Snoword",
   "license": "MIT",
-  "funding": "https://github.com/sponsors/antfu",
-  "homepage": "https://github.com/antfu/ext-name#readme",
+  "funding": "https://github.com/sponsors/Snoword",
+  "homepage": "https://github.com/Snoword/nodejs-version-vscode#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/antfu/ext-name"
+    "url": "https://github.com/Snoword/nodejs-version-vscode"
   },
   "bugs": {
-    "url": "https://github.com/antfu/ext-name/issues"
+    "url": "https://github.com/Snoword/nodejs-version-vscode/issues"
   },
   "sponsor": {
-    "url": "https://github.com/sponsors/antfu"
+    "url": "https://github.com/sponsors/Snoword"
   },
   "categories": [
     "Other"
@@ -34,13 +34,18 @@
     "vscode": "^1.97.0"
   },
   "activationEvents": [
-    "onStartupFinished"
+    "*"
   ],
   "contributes": {
-    "commands": [],
+    "commands": [
+      {
+        "command": "nodejs-version.refresh",
+        "title": "Refresh Node.js Version Display"
+      }
+    ],
     "configuration": {
       "type": "object",
-      "title": "ext-name",
+      "title": "NodeJS Version",
       "properties": {}
     }
   },
@@ -57,6 +62,9 @@
     "typecheck": "tsc --noEmit",
     "release": "bumpp && nr publish"
   },
+  "dependencies": {
+    "reactive-vscode": "^0.2.10"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^4.2.1",
     "@antfu/ni": "^23.3.1",
@@ -67,7 +75,6 @@
     "eslint": "^9.20.1",
     "esno": "^4.8.0",
     "pnpm": "^10.4.1",
-    "reactive-vscode": "^0.2.10",
     "tsup": "^8.3.6",
     "typescript": "^5.7.3",
     "vite": "^6.1.0",
