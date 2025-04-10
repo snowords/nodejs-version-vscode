@@ -31,4 +31,4 @@ After installing the extension, the current Node.js version will automatically a
 
 ## License
 
-[MIT](./LICENSE.md) License 2023 [Snoword](https://github.com/Snoword)
+[MIT](./LICENSE.md) License 2025 [snowords](https://github.com/snowords)

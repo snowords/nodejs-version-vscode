@@ -1,24 +1,24 @@
 {
-  "publisher": "Snoword",
+  "publisher": "Snowords",
   "name": "nodejs-version-vscode",
   "displayName": "NodeJS Version",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "packageManager": "pnpm@10.4.1",
   "description": "Show the current version of NodeJS on the left of VSCode status bar",
-  "author": "Snoword",
+  "author": "Snowords",
   "license": "MIT",
-  "funding": "https://github.com/sponsors/Snoword",
-  "homepage": "https://github.com/Snoword/nodejs-version-vscode#readme",
+  "funding": "https://github.com/sponsors/snowords",
+  "homepage": "https://github.com/snowords/nodejs-version-vscode#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Snoword/nodejs-version-vscode"
+    "url": "https://github.com/snowords/nodejs-version-vscode"
   },
   "bugs": {
-    "url": "https://github.com/Snoword/nodejs-version-vscode/issues"
+    "url": "https://github.com/snowords/nodejs-version-vscode/issues"
   },
   "sponsor": {
-    "url": "https://github.com/sponsors/Snoword"
+    "url": "https://github.com/sponsors/snowords"
   },
   "categories": [
     "Other"
